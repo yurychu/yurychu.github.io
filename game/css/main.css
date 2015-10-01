@@ -5,3 +5,12 @@
 .not_visio {
 	display: none;
 }
+
+.pet_finder {
+	display: inline;
+	width: 50px;
+}
+
+#pets_finder .pets {
+	width: 200px;
+}
