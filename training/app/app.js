@@ -1,5 +1,5 @@
 window.onload = function(){
-	var url = "http://yurychu.github.io/training/app/sales.json"
+	var url = "http://yurychu.github.io/training/app/sales.json";
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
 	request.onload = function(){
