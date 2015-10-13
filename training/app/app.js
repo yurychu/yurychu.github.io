@@ -3,7 +3,7 @@ window.onload = function(){
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
 	request.onload = function(){
-		if (request == 200) {
+		if (request.status == 200) {
 			updateSales(request.responseText);
 		}
 	};
