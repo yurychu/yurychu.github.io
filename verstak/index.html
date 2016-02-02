@@ -7,37 +7,89 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <div>Техподдержка</div>
-            <ul>
-                <li>Вы зарегистрированы как Петров Петр Петрович</li>
-                <li><a href="#">Персональные данные</a></li>
-                <li><a href="#">Выход</a></li>
-            </ul>
-        </div>
-        <nav class="nav navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="#" class="navbar-brand">Главная</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="#">Техподдержка</a>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Рабочий кабинет <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Мои задания</a></li>
-                                <li><a href="#">Доступные задания</a></li>
-                                <li><a href="#">Исполняемые задания</a></li>
-                                <li><a href="#">Мои процессы</a></li>
-                                <li><a href="#">Мониторинг исполнения услуг</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="col-md-10">
+                    <div class="pull-right">
+                        <span>Вы зарегистрированы как Петров Петр Петрович</span>
+                        <a href="#">Персональные данные</a>
+                        <a href="#">Выход</a>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle"
+                                data-target=".navbar-collapse"
+                                data-toggle="collapse"
+                                type="button">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Главная</a>
+                    </div>
+                    <div class="navbar-collapse collapse in">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Рабочий кабинет <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Мои задания</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Доступные задания</a></li>
+                                    <li><a href="#">Исполняемые задания</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Мои процессы</a></li>
+                                    <li><a href="#">Мониторинг исполнения услуг</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Реестры <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">Металлы</li>
+                                    <li><a href="#">Действующий</a></li>
+                                    <li><a href="#">Архивный</a></li>
+                                    <li class="dropdown-header">Алкоголь</li>
+                                    <li><a href="#">Действующий</a></li>
+                                    <li><a href="#">Архивный</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="jumbotron">
+                <h3>Регистрация заявки</h3>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="num_order" class="col-sm-2 control-label">Номер заявки</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="num_order" placeholder="Номер заявки" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date" class="col-sm-2 control-label">Дата регистрации</label>
+                        <div class="col-sm-6">
+                            <input type="date" class="form-control" id="date" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
+                            <a href="../index.html" class="btn btn-warning">Отмена</a>
+                        </div>
+                    </div>
+                </form>
 
+            </div>
+        </div>
         <script src="jquery/jquery-2.2.0.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
